@@ -39,21 +39,3 @@
   [activity-id elapsed-ms]
   (if-let [idle-time (idle-time activity-id)]
           (>= idle-time elapsed-ms)))
-
-;; ----------------------------------------------------------------------------
-;; ----------------------------------------------------------------------------
-
-(defn time-left
-  ; @description
-  ; Returns how many MS left until the end of a specific countdown.
-  ;
-  ; @param (keyword) countdown-id
-  ;
-  ; @usage
-  ; (start-countdown! :my-countdown {...})
-  ; (let [time-left (time-left :my-countdown)]
-  ;      (println time-left "ms left"))
-  ;
-  ; @return (ms)
-  [countdown-id]
-  (-> state/COUNTDOWNS deref countdown-id))

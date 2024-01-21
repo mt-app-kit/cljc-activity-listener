@@ -3,7 +3,7 @@
 
 ### Overview
 
-The <strong>cljc-activity-listener</strong> is a simple elapsed time listener for Clojure projects.
+The <strong>cljc-activity-listener</strong> is a simple activity time register and idle time listener for Clojure projects.
 
 ### deps.edn
 

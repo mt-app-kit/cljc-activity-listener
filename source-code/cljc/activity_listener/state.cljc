@@ -1,19 +1,8 @@
 
-(ns activity-listener.state
-    #?(:cljs (:require [reagent.core :refer [atom] :rename {atom ratom}])))
+(ns activity-listener.state)
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
-
-; @ignore
-;
-; @description
-; ...
-;
-; @atom (map)
-; {:my-countdown (ms)}
-(defonce COUNTDOWNS #?(:clj  (atom  {})
-                       :cljs (ratom {})))
 
 ; @ignore
 ;
@@ -22,5 +11,4 @@
 ;
 ; @atom (map)
 ; {:my-activity (ms)}
-(defonce LAST-ACTIVITIES #?(:clj  (atom  {})
-                            :cljs (ratom {})))
+(defonce LAST-ACTIVITIES (atom  {}))
