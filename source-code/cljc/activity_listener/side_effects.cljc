@@ -1,8 +1,8 @@
 
 (ns activity-listener.side-effects
-    (:require [activity-listener.state :as state]
-              [activity-listener.env :as env]
-              [time.api :as time]))
+    (:require [activity-listener.env   :as env]
+              [activity-listener.state :as state]
+              [time.api                :as time]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
