@@ -11,4 +11,4 @@
 (def idle-time-elapsed? env/idle-time-elapsed?)
 
 ; @redirect (activity-listener.side-effects/*)
-(def reg-last-activity! side-effects/reg-last-activity!)
+(def reg-activity! side-effects/reg-activity!)

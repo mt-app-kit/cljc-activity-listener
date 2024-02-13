@@ -7,14 +7,14 @@
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-(defn reg-last-activity!
+(defn reg-activity!
   ; @description
-  ; Registers the actual time as when the last activity happened of the given activity ID.
+  ; Registers the actual time as the last activity of the given activity ID.
   ;
   ; @param (keyword) activity-id
   ;
   ; @usage
-  ; (reg-last-activity! :my-activity)
+  ; (reg-activity! :my-activity)
   [activity-id]
   #?(:clj  (swap! state/LAST-ACTIVITIES assoc activity-id (time/epoch-ms))
      :cljs (swap! state/LAST-ACTIVITIES assoc activity-id (time/elapsed))))
