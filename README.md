@@ -16,10 +16,10 @@ The <strong>cljc-activity-listener</strong> is a simple activity time register a
 
 Check out the latest commit on the [release branch](https://github.com/mt-app-kit/cljc-activity-listener/tree/release).
 
-### Documentation
-
-The <strong>cljc-activity-listener</strong> functional documentation is [available here](https://mt-app-kit.github.io/cljc-activity-listener).
-
 ### Changelog
 
 You can track the changes of the <strong>cljc-activity-listener</strong> library [here](CHANGES.md).
+
+# Documentation
+
+The <strong>cljc-activity-listener</strong> functional documentation is [available here](https://mt-app-kit.github.io/cljc-activity-listener).
