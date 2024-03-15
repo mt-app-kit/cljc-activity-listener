@@ -32,8 +32,8 @@
   ; @usage
   ; (lock-activity! :my-activity 420)
   [activity-id unlock-timeout]
-  #?(:clj  (let [epoch-ms     (time/epoch-ms)]     (common-state/assoc-state! :activity-listener activity-id :activity-locked-until (+ unlock-timeout epoch-ms)))
-     :cljs (let [elapsed-time (time/elapsed-time)] (common-state/assoc-state! :activity-listener activity-id :activity-locked-until (+ unlock-timeout elapsed-time)))))
+  #?(:clj  (let [epoch-ms (time/epoch-ms)] (common-state/assoc-state! :activity-listener activity-id :locked-until (+ unlock-timeout epoch-ms)))
+     :cljs (let [elapsed  (time/elapsed)]  (common-state/assoc-state! :activity-listener activity-id :locked-until (+ unlock-timeout elapsed)))))
 
 (defn unlock-activity!
   ; @description
@@ -44,4 +44,4 @@
   ; @usage
   ; (unlock-activity! :my-activity)
   [activity-id unlock-timeout]
-  (common-state/dissoc-state! :activity-listener activity-id :activity-locked-until))
+  (common-state/dissoc-state! :activity-listener activity-id :locked-until))

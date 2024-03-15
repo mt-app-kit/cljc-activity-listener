@@ -1,6 +1,6 @@
 
 (ns activity-listener.env
-    (:require [time.api                :as time]
+    (:require [time.api :as time]
               [common-state.api :as common-state]))
 
 ;; ----------------------------------------------------------------------------
@@ -72,7 +72,7 @@
   ;
   ; @return (boolean)
   [activity-id]
-  (if-let [locked-until (common-state/get-state :activity-listener activity-id :activity locked-until)]
+  (if-let [locked-until (common-state/get-state :activity-listener activity-id :locked-until)]
           #?(:clj  (< (time/epoch-ms) locked-until)
              :cljs (< (time/elapsed)  locked-until))))
 
