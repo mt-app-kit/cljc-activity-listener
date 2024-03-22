@@ -1,7 +1,7 @@
 
 (ns activity-listener.env
-    (:require [time.api :as time]
-              [common-state.api :as common-state]))
+    (:require [common-state.api :as common-state]
+              [time.api         :as time]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
