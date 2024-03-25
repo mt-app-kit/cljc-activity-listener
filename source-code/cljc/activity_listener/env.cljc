@@ -38,7 +38,8 @@
   ; @return (boolean)
   [activity-id elapsed-ms]
   (if-let [idle-time (idle-time activity-id)]
-          (>= idle-time elapsed-ms)))
+          (and (-> elapsed-ms (number?))
+               (-> elapsed-ms (<= idle-time)))))
 
 (defn idle-time-not-elapsed?
   ; @description
