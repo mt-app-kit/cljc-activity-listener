@@ -1,8 +1,8 @@
 
 {:paths ["source-code/cljc"]
  :deps  {mt-app-kit/cljc-common-state {:git/url "https://github.com/mt-app-kit/cljc-common-state"
-                                       :sha     "3baf548870e04c8990f15cb6dea970f07703b1b0"}
+                                       :sha     "897859d67dcca3d81260cfaa538da2e6f9760099"}
          mt-utilities/cljc-time       {:git/url "https://github.com/mt-utilities/cljc-time"
-                                       :sha     "2ea38226312c026bc6f96584652fb3ec704d72ac"}
+                                       :sha     "75745824d272db5abae408b3a56422b18cd20266"}
          org.clojure/clojure          {:mvn/version "1.10.1"}
          org.clojure/clojurescript    {:mvn/version "1.10.891"}}}
