@@ -3,6 +3,6 @@
  :deps  {mt-app-kit/cljc-common-state {:git/url "https://github.com/mt-app-kit/cljc-common-state"
                                        :sha     "85e195270364c664590657c22e89b8cff2f6c99e"}
          mt-utilities/cljc-time       {:git/url "https://github.com/mt-utilities/cljc-time"
-                                       :sha     "798bb57c5d0d421618bcef7071d49580e16b61aa"}
+                                       :sha     "66a0d8c02a26d9cfe4b1bfbae1b30989d5595864"}
          org.clojure/clojure          {:mvn/version "1.10.1"}
          org.clojure/clojurescript    {:mvn/version "1.10.891"}}}
